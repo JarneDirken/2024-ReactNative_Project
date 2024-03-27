@@ -1,8 +1,27 @@
 {
-    "Food": "bowl-food",
-    "Transportation": "train",
-    "Shopping": "bag-shopping",
-    "Entertainment": "photo-film",
-    "Gas": "gas-pump"
-  }
+    "Food": {
+      "icon": "bowl-food",
+      "typeId": "DSQtnezHQuZ0bn1UJbJY"
+    },
+    "Transportation": {
+      "icon": "train",
+      "typeId": "Dom3hnzzhacRyKxNxO0m"
+    },
+    "Shopping": {
+      "icon":"bag-shopping",
+      "typeId": "zydgyTFr6L1RL8z9BdmV"
+    },
+    "Entertainment": {
+      "icon":"photo-film",
+      "typeId": "kUDYNIO9cwMmcYDCXrP3"
+    },
+    "Gas": {
+      "icon":"gas-pump",
+      "typeId": "ES7pkGCcBmhesW7SR3qm"
+    },
+    "Other": {
+      "icon":"question",
+      "typeId": "N5EpCJmzAjDj7FcUSbUo"
+    }
+}
   

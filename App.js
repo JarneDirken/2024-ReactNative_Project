@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Platform } from 'react-native';
 import { RecoilRoot } from 'recoil';
 import Navigation from './components/navigation';
+import { LogBox } from 'react-native';
+LogBox.ignoreAllLogs();//Ignore all log notifications
 
 export default function App() {
   const isWeb = Platform.OS === 'web';

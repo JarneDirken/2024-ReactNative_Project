@@ -3,9 +3,16 @@ import iconData from "../config/iconData.json"
 import { FontAwesome6 } from '@expo/vector-icons';
 
 export default function HomeBottom({ data }) {
+
+    const sortedData = data.sort((a, b) => {
+        const dateA = new Date(a.date.seconds * 1000);
+        const dateB = new Date(b.date.seconds * 1000);
+        return dateB - dateA; // Sort in descending order
+    });
+
     return (
        <ScrollView>
-           {data.map((expense, index) => (
+           {sortedData.map((expense, index) => (
                <View key={index}>
                     <Card 
                         typeName={expense.typeName} 
@@ -22,7 +29,7 @@ function Card({ typeName, amount, date }){
     return (
         <View style={styles.container}>
             <View style={styles.wrap}>
-                <FontAwesome6 name={icon[typeName]} size={24} color="#4f4f4f" />
+                <FontAwesome6 name={icon[typeName].icon} size={24} color="#4f4f4f" />
                 <View style={styles.nameAndDate}>
                     <Text>{typeName}</Text>
                     <Text style={styles.date}>{date}</Text>
