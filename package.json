@@ -17,6 +17,7 @@
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",
     "expo": "~50.0.14",
+    "expo-linear-gradient": "~12.7.2",
     "expo-status-bar": "~1.11.1",
     "firebase": "^10.9.0",
     "graphql": "^15.8.0",
@@ -25,6 +26,8 @@
     "react-native": "0.73.6",
     "react-native-config": "^1.5.1",
     "react-native-dotenv": "^3.4.11",
+    "react-native-gifted-charts": "^1.4.8",
+    "react-native-svg": "14.1.0",
     "react-native-web": "~0.19.6",
     "react-scripts": "5.0.1",
     "recoil": "^0.7.7"

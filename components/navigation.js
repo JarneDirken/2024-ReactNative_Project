@@ -140,7 +140,9 @@ export default function Navigation(){
                   )
               }}
           />
-          <Tab.Screen name="Analytics" component={Analytics} />
+          <Tab.Screen name="Analytics">
+              {() => <Analytics expenses={filteredExpenses} />}
+          </Tab.Screen>
       </Tab.Navigator>
       <AddExpenseModal visible={modalVisible} onClose={() => setModalVisible(false)} />
   </NavigationContainer>
